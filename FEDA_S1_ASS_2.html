@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Validate Email</title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var validateEmail = function(email) {
+			if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {  
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+		
+		var emailId = 'om.prakash22588@gmail.com';
+		
+		alert('Q: Is this id: "' + emailId + '" valid.\nA: ' + validateEmail(emailId));
+	</script>
+</html>
+</html>
